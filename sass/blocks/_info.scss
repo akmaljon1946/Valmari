@@ -1,0 +1,657 @@
+.info{
+  margin-bottom: 166px;
+  gap:29px;
+
+    &__heading{
+      font: {
+        style: normal;
+        weight: 600;
+        size: 35px;
+      }
+
+      margin-top: 175px;
+      margin-bottom: 75px;
+      line-height: 28px;
+      text-align: center;
+      color: #424242;
+    }
+
+
+    &__box{
+      @include box;
+    }
+
+    &__box-teachers{
+      position: relative;
+      width: 381px;
+      padding: {
+        top: 40px;
+        right: 15px;
+        left: 30px;
+        bottom: 28px;
+      }
+
+      box-shadow: 0px 10px 10px
+      #F0F0F0;
+          
+    }
+    
+    &__box-certific{
+      position: relative;
+      width: 381px;
+      padding: {
+        top: 40px;
+        right: 21px;
+        left: 31px;
+        bottom: 70px;
+      }
+      
+      background: $main-light-green;
+      box-shadow: 0px 10px 10px
+      #F0F0F0;
+    }
+    
+    &__box-qualify{
+      position: relative;
+      width: 381px;
+      padding: {
+        top: 28px;
+        right: 28px;
+        left: 32px;
+        bottom: 84px;
+      }
+      
+      box-shadow: 0px 10px 10px
+      #F0F0F0;
+    }
+    
+    &__box-qualify-head{
+      font: {
+        style: normal;
+        weight: 600;
+        size: 25px;
+        
+      }
+      
+      margin-bottom: 14px;
+      line-height: 26px;
+      color: $main-black;
+    }
+    
+    &__box-teachers-head{
+      font: {
+        style: normal;
+        weight: 600;
+        size: 25px;
+        
+      }
+      
+      margin-bottom: 33px;
+      line-height: 26px;
+      color: $main-black;
+    }
+    
+    &__box-teachers-text{
+      font: {
+        style: normal;
+        weight: 400;
+        size: 20px;
+      }
+
+      line-height: 23px;
+      color: #1C1E23;
+      opacity: 0.8;
+    }
+    
+    &__box-teachers-title{
+      position: absolute;
+      right: 44px;
+      bottom: 74px;
+      font: {
+        family:"Raleway";
+        style: normal;
+        weight: 500;
+        size: 180px;
+      }
+      margin: 0;
+      line-height: 36px;
+      color: rgba(85, 166, 48, 0.25);
+    }
+
+    &__box-certific-title{
+      position: absolute;
+      top: 50px;
+      right: 24px;
+      font: {
+        family:"Raleway";
+        style: normal;
+        weight: 500;
+        size: 180px;
+      }
+      margin: 0;
+      line-height: 36px;
+    color: rgba(255, 255, 255, 0.3);
+    }
+
+    &__box-qualify-title{
+      position: absolute;
+      bottom: 99px;
+      right: 30px;
+
+      font: {
+        family:"Raleway";
+        style: normal;
+        weight: 500;
+        size: 180px;
+      }
+
+      margin: 0;
+      line-height: 36px;
+      color: rgba(85, 166, 48, 0.25);
+
+    }
+  
+}
+
+// responsive
+
+@media only screen and (max-width:1000px) {
+  .info{
+   
+     &__heading {
+       font: {
+         style: normal;
+         weight: 600;
+         size: 30px;
+       }
+
+       margin-top: 140px;
+       margin-bottom: 50px;
+       line-height: 28px;
+     }
+
+     &__box{
+        gap:30px;
+     }
+
+     &__box-teachers{
+       padding-top: 18px;
+     }
+
+       &__box-certific {
+          padding-top: 18px;
+          padding-bottom: 65px;
+
+       }
+
+       &__box-qualify {
+         padding-top: 0;
+         padding-bottom: 72px;
+    
+         }
+
+       &__box-qualify-head {
+         font: {
+           style: normal;
+           weight: 600;
+           size: 20px;
+          }
+          line-height: 26px;
+
+        }
+           
+
+
+       &__box-teachers-head {
+         font: {
+           style: normal;
+           weight: 600;
+           size: 20px;
+          }
+
+          line-height: 26px;
+           
+        }
+
+        &__box-teachers-text {
+          font: {
+            style: normal;
+            weight: 400;
+            size: 15px;
+          }
+
+          line-height: 17px;
+        
+        }
+
+          &__box-teachers-title {
+            position: absolute;
+            right: 19px;
+            bottom: 59px;
+
+            font: {
+              family:"Montserrat";
+              style: normal;
+              weight: 500;
+              size: 180px;
+            }
+            z-index: -1;
+            margin: 0;
+            line-height: 36px;
+           color: #ECF9EB;
+          }
+
+          &__box-certific-title {
+            position: absolute;
+            top: 52px;
+            right: 10px;
+
+            font: {
+              family:"Montserrat";
+              style: normal;
+              weight: 500;
+              size: 180px;
+            }
+            z-index: 1;
+            margin: 0;
+            line-height: 36px;
+            color: rgba(255, 255, 255, 0.3);
+          }
+
+          &__box-qualify-title {
+            position: absolute;
+            bottom: 69px;
+            right: 24px;
+
+            font: {
+              family:"Montserrat";
+              style: normal;
+              weight: 500;
+              size: 180px;
+            }
+            z-index: -1;
+            margin: 0;
+            line-height: 36px;
+            color: #ECF9EB;
+
+          }
+
+        }
+            
+    }
+     
+
+    @media only screen and (max-width:768px) {
+      .info{
+
+        &__heading {
+          font: {
+            style: normal;
+            weight: 600;
+            size: 25px;
+          }
+
+          margin-top: 100px;
+          margin-bottom: 50px;
+          line-height: 28px;
+        }
+
+        &__box{
+          display: flex;
+          flex-direction: column;
+        }
+
+        &__box-teachers{
+          position: relative;
+          max-width: 642px;
+          width: 100%;
+          padding: 0;
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        &__box-teachers-head{
+           font: {
+             style: normal;
+             weight: 600;
+             size: 16px;
+           }
+
+           margin-top: 15px;
+           margin-bottom: 15px;
+           line-height: 26px;
+        }
+        
+        &__box-teachers-text {
+          max-width: 421px;
+
+          font: {
+            style: normal;
+            weight: 400;
+            size: 15px;
+          }
+
+          margin: 0;
+          margin-bottom: 8px;
+          line-height: 17px;
+
+        }
+
+        &__box-certific {
+          position: relative;
+           max-width: 642px;
+           width: 100%;  
+           padding: 0;
+           display: flex;
+           justify-content: flex-end;
+           padding-bottom: 40px;
+        }
+
+        &__box-qualify {
+         position: relative;
+         max-width: 642px;
+         width: 100%;
+         padding: 0;
+         display: flex;
+         justify-content: flex-end;
+         padding-bottom: 27px;
+        }
+
+        &__box-qualify-head {
+          font: {
+            style: normal;
+            weight: 600;
+            size: 16px;
+
+          }
+
+          margin-top: 15px;
+          margin-bottom: 15px;
+          line-height: 26px;
+          color: $main-black;
+        }
+
+        &__box-teachers-title {
+          position: absolute;
+          left: 2px;
+          bottom: 59px;
+          color: rgba(85, 166, 48, 0.25);
+
+        }
+
+        &__box-certific-title {
+          position: absolute;
+          top: 62px;
+          left: 2px;
+        }
+
+        &__box-qualify-title {
+          position: absolute;
+          bottom: 56px;
+          left: 2px;
+          color: rgba(85, 166, 48, 0.25);
+
+        }
+
+      }
+   
+    }
+
+    @media only screen and (max-width:480px) {
+      .info{
+         &__heading {
+           font: {
+             style: normal;
+             weight: 600;
+             size: 20px;
+           }
+
+           margin-top: 80px;
+           margin-bottom: 40px;
+           line-height: 28px;
+         }
+
+         &__box-teachers {
+           position: relative;
+           max-width: 355px;
+          }
+          
+
+         &__box-teachers-head {
+           font: {
+             style: normal;
+             weight: 600;
+             size: 15px;
+           }
+
+           margin-top: 15px;
+           margin-bottom: 15px;
+           line-height: 26px;
+         }
+
+         &__box-teachers-text {
+           max-width: 248px;
+           font: {
+             style: normal;
+             weight: 400;
+             size: 15px;
+           }
+
+           margin: 0;
+           margin-bottom: 14px;
+           line-height: 19px;
+
+         }
+
+         &__box-certific {
+           position: relative;
+           max-width: 355px;
+           padding-bottom: 43px;
+         }
+
+         &__box-qualify {
+           position: relative;
+           max-width: 355px;
+           padding-bottom: 43px;
+         }
+
+         &__box-qualify-head {
+           font: {
+             style: normal;
+             weight: 600;
+             size: 15px;
+
+           }
+
+           margin-top: 25px;
+           margin-bottom: 18px;
+           line-height: 16px;
+         }
+
+         &__box-teachers-title {
+           position: absolute;
+           left: 11px;
+           bottom: 96px;
+           font: {
+             style: normal;
+             weight: 500;
+             size: 144px;
+          } 
+
+           line-height: 36px;
+           letter-spacing: -0.09em;
+           color: rgba(85, 166, 48, 0.25);
+
+         }
+
+
+         &__box-certific-title {
+           position: absolute;
+           top: 81px;
+           left: 15px;
+             font: {
+               style: normal;
+               weight: 500;
+               size: 144px;
+             }
+
+             line-height: 36px;
+             letter-spacing: -0.12em;
+         }
+
+         &__box-qualify-title {
+           position: absolute;
+           bottom: 112px;
+           left: 10px;
+             font: {
+               style: normal;
+               weight: 500;
+               size: 144px;
+             }
+
+             line-height: 36px;
+             letter-spacing: -0.1em;
+           color: rgba(85, 166, 48, 0.25);
+
+         }
+
+        }
+
+      }
+
+ @media only screen and (max-width:320px) {
+   .info{
+    &__container{
+      padding: 0;
+    }
+
+    &__box{
+      gap:40px;
+    }
+
+      &__box-teachers {
+        display: block;
+        position: relative;
+        max-width: 300px;
+        padding: {
+          top: 34px ;
+          left: 20px;
+          right: 2px;
+          bottom: 31px;
+        }
+      }
+
+
+      &__box-teachers-head {
+        margin-bottom: 19px;
+        text-align: center;
+      }
+
+       &__box-teachers-text {
+         max-width: 248px;
+         display: inline;
+         margin: 0;
+        }
+
+        &__box-certific {
+          position: relative;
+          max-width: 300px;
+          padding: {
+            top: 40px;
+            left: 20px;
+            right: 37px;
+            bottom: 41px;
+          }
+        }
+       
+        &__box-qualify {
+          position: relative;
+          max-width: 300px;
+          padding: {
+            top: 46px;
+            left: 18px ;
+            right: 37px;
+            bottom: 43px;
+          }
+        }
+
+        &__box-qualify-head {
+          text-align: center;
+ 
+          }
+
+          &__box-teachers-title {
+            position: absolute;
+            left: 134px;
+            top: 30px;
+   
+            font: {
+              style: normal;
+              weight: 500;
+              size: 49px;
+            }
+
+            line-height: 36px;
+            letter-spacing: -0.09em;
+            color: rgba(85, 166, 48, 0.25);
+   
+          }
+
+          &__box-certific-title {
+            position: absolute;
+            top: 28px;
+            left: 114px;
+   
+            font: {
+              style: normal;
+              weight: 500;
+              size: 49px;
+            }
+   
+            line-height: 36px;
+            letter-spacing: -0.12em;
+          }
+
+          &__box-qualify-title {
+            position: absolute;
+            top: 41px;
+            left: 105px;
+   
+            font: {
+              style: normal;
+              weight: 500;
+              size: 49px;
+            }
+   
+            line-height: 36px;
+            letter-spacing: -0.1em;
+            color: rgba(85, 166, 48, 0.25);
+   
+          }
+          
+        }
+        
+      }     
+
+
+
+
+
+        
+    
+
+
+
+      
+
+
+    
+      
+        
+        
+
+
+
+
+
+

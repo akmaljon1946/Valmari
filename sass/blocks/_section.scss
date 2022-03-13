@@ -1,0 +1,405 @@
+.section{
+  max-width: 1440px;
+  padding-bottom: 175px;
+  padding-left: 120px;
+  padding-right: 120px;
+
+  &__heading{
+    font: {
+      style: normal;
+      weight: 600;
+      size: 35px;
+    }
+
+    line-height: 0px;
+    text-align: center;
+    color: $main-green;
+
+  }
+
+  &__img{
+    width: 488px;
+    height: 396px;
+  }
+
+  &__education{
+    @include box;
+    padding-top: 85px;
+  }
+
+  &__education-heading{
+    margin: 0;
+    font: {
+      style: normal;
+      weight: 600;
+      size: 32px;
+    }
+      
+    line-height: 26px;
+    color: $main-black;
+    opacity: 0.8;
+  }
+    
+
+  .small-line{
+    width: 133px;
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    background-color: $main-green;
+  }
+
+  &__education-text{
+    width: 586px;
+    font: {
+      style: normal;
+      weight: 500;
+      size: 25px;
+    }
+    
+    line-height: 33px;
+    margin: 0;
+    color: #424242;
+    opacity: 0.8;
+  }
+
+}
+
+// Responsive(1000,768,480,320)
+
+@media only screen and (max-width:1000px) {
+  .section {
+    max-width: 1000px;
+    margin-bottom: 142px;
+    padding: 0;
+   
+
+    &__heading {
+      font: {
+        style: normal;
+        weight: 600;
+        size: 30px;
+      }
+  
+      line-height: 0px;
+      text-align: center;
+      color: $main-green;
+
+    }
+
+     &__img {
+       width: 389px;
+       height: 265px;
+     }
+
+    &__education {
+      padding-top: 65px;
+      @include box;
+    }
+
+    &__education-box {
+  
+    }
+
+    &__classroom-box {
+      
+    }
+
+    &__education-heading {
+    
+
+      font: {
+        style: normal;
+        weight: 600;
+        size: 25px;
+      }
+
+      line-height: 26px;
+
+      color: $main-black;
+      opacity: 0.8;
+    }
+
+    .small-line {
+      width: 130px;
+      height: 2px;
+      margin-top: 20px;
+      margin-bottom: 42px;
+      background-color: $main-green;
+    }
+
+    &__education-text {
+      width: 492px;
+      font: {
+        style: normal;
+        weight: 500;
+        size: 20px;
+      }
+      
+      line-height: 26px;
+      margin: 0;
+      color: #424242;
+      opacity: 0.8;
+    }
+
+  }
+}
+
+
+
+
+// responsive(768)
+
+@media only screen and (max-width:768px) {
+  .section {
+    max-width: 768px ;
+    margin-bottom: 106px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+    &__heading {
+      font: {
+        style: normal;
+        weight: 600;
+        size: 25px;
+      }
+  
+      line-height: 0px;
+      text-align: center;
+      color: $main-green;
+
+    }
+
+    &__img{
+      width: 256px;
+      height: 226px;
+    }
+
+    &__education {
+      padding-top: 57px;
+      @include box;
+    }
+
+    &__education-box {
+      
+    }
+
+    &__classroom-box {
+    
+    }
+
+    
+    &__education-heading {
+      font: {
+        style: normal;
+        weight: 600;
+        size: 18px;
+      }
+
+      line-height: 26px;
+      color: $main-black;
+      opacity: 0.8;
+    }
+
+
+    .small-line {
+      width: 75px;
+      height: 2px;
+      margin-top: 14px;
+      margin-bottom: 35px;
+      display: inline-block;
+      background-color: $main-green;
+    }
+
+    &__education-text {
+      width: 327px;
+      font: {
+        style: normal;
+        weight: 500;
+        size: 15px;
+      }
+      
+      line-height: 20px;
+      margin: 0;
+      color: #424242;
+      opacity: 0.8;
+    }
+  }
+}
+
+// responsive(480)
+
+@media only screen and (max-width:480px) {
+  .section {
+    max-width: 480px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+
+    &__heading {
+      width: 356px;
+      font: {
+        style: normal;
+        weight: 600;
+        size: 20px;
+      }
+    
+      line-height: 0px;
+      text-align: center;
+      color: $main-green;
+
+    }
+
+     &__img {
+       width: 360px;
+       height: 156px;
+     }
+
+    &__education {
+      @include box;
+      flex-direction: column;
+      align-items: flex-start;
+      order: 1;
+      
+    }
+
+    &__classroom-box{
+      order: 2;
+    }
+
+    &__education-heading {
+      margin: 0;
+      margin-top: 18px;
+
+      font: {
+        style: normal;
+        weight: 600;
+        size: 18px;
+      }
+
+      line-height: 26px;
+
+      color: $main-black;
+      opacity: 0.8;
+    }
+
+    .small-line {
+      width: 75px;
+      height: 2px;
+      margin-top: 12px;
+      margin-bottom: 23px;
+      background-color: $main-green;
+    }
+
+    &__education-text {
+      font: {
+        style: normal;
+        weight: 500;
+        size: 15px;
+      }
+      
+      line-height: 20px;
+      margin: 0;
+      color: #424242;
+      opacity: 0.8;
+    }
+  }
+}
+
+// responsive(320)
+
+@media only screen and (max-width:320px) {
+  .section {
+    max-width: 320px;
+    padding-left:10px;
+    padding-right:10px;
+    margin: 0;
+
+ 
+
+    &__heading {
+      width: 209px;
+      text-align: center;
+      margin: {
+        left: 28px;
+        top: 80px;
+        bottom: 40px;
+      }
+      font: {
+        style: normal;
+        weight: 600;
+        size: 20px;
+      }
+      
+      line-height: 26px;
+      color: $main-green;
+
+    }
+
+    &__education {
+      padding-top: 0;
+      @include box;
+      flex-direction: column;
+      order: 1;
+    }
+
+
+    &__classroom-box {
+      order: 2;
+    }
+
+    &__education-heading {
+      margin: 0;
+      margin-top: 18px;
+
+      font: {
+        style: normal;
+        weight: 600;
+        size: 18px;
+      }
+
+      line-height: 26px;
+      color: $main-black;
+      opacity: 0.8;
+    }
+
+
+    &__img{
+      width: 300px;
+      height: 156px;
+    }
+
+    .small-line {
+      width: 75px;
+      height: 2px;
+      margin-top: 12px;
+      margin-bottom: 23px;
+      background-color: $main-green;
+    }
+
+    &__education-text {
+      width: 282px;
+      font: {
+        style: normal;
+        weight: 500;
+        size: 15px;
+      }
+      
+      line-height: 20px;
+      margin: 0;
+      margin-bottom: 40px;
+      color: #424242;
+      opacity: 0.8;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
