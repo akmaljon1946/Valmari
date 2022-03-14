@@ -1,0 +1,157 @@
+.doctors{
+  &__heading{
+    font: {
+      style: normal;
+      weight: 600;
+      size: 35px;
+    }
+
+    line-height: 28px;
+    margin-bottom: 75px;
+    text-align: center;
+    color: $main-black;
+  }
+
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    @include box;
+    gap:20px;
+  }
+
+  &__img{
+    width: 285px;
+    height: 380px;
+  }
+
+  &__title{
+    font: {
+      style: normal;
+      weight: 600;
+      size: 20px;
+    }
+    line-height: 26px;
+    margin: 0;
+    margin-top: 20px;
+    color: $main-black;
+  }
+
+  &__job{
+    width: 152px;
+    font: {
+      style: normal;
+      weight: 400;
+      size: 15px;
+    }
+
+    line-height: 23px;
+    margin: 0;
+    margin-top: 4px;
+    color: #1C1E23;
+    opacity: 0.8;
+  }
+
+  // responsive
+
+  @media only screen and (max-width:1000px) {
+    .doctors{
+       
+      &__heading{
+        font-size: 30px;
+        margin-top: 141px;
+        margin-bottom: 51px;
+      }
+      
+      &__list{
+        flex-wrap: wrap;
+        padding-left: 133px;
+        padding-right: 133px;
+        }
+
+    }
+  }
+  
+  @media only screen and (max-width:768px) {
+    .doctors{
+       
+      &__heading{
+        font-size: 25px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+      }
+      
+      &__list{
+        flex-wrap: wrap;
+        padding-left: 43px;
+        padding-right: 43px;
+        }
+
+    }
+  }
+  
+  @media only screen and (max-width:480px) {
+    .doctors{
+       
+      &__heading{
+        font-size: 20px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+
+      }
+      
+      &__list{
+        flex-wrap: wrap;
+        padding-left: 40px;
+        padding-right: 40px;
+        }
+
+      &__img {
+        width: 159px;
+        height: 213px;
+      }
+
+      &__title{
+        font-size: 15px;
+        margin-top: 8px;
+      }
+
+    }
+  }
+
+   @media only screen and (max-width:320px) {
+      .doctors {
+        &__img {
+          width: 180px;
+          height: 189px;
+        }
+
+        &__list{
+          padding-left: 50px;
+          padding-right: 50px;
+          gap:50px;
+        }
+
+        &__item{
+          text-align: center;
+        }
+
+        &__job{
+          margin: 0;
+          display: inline-block;
+        }
+
+     }
+
+  }
+    
+
+  
+
+
+
+    
+
+
+
+}
