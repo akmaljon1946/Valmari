@@ -1,24 +1,22 @@
 .header {
-    &__top--container {
+  
+    &__top-container {
       @include box;
       margin-top: 12px;
       margin-bottom: 17px;
     }
 
-    &__top-right{
-      position: relative;
+    &__top-right {
       width: 545px;
-      display: flex;
-      align-items:center;
-      justify-content: flex-end;
-      width: 100%;
+      @include box;
     }
 
-    &__top-right-tel{
+    &__top-right-tel {
       display: flex;
-      align-items:center;
+      align-items: center;
 
       @include link;
+
       font: {
         style: normal;
         weight: 500;
@@ -28,84 +26,86 @@
       line-height: 26px;
       color: $main-black;
     }
-    
+
     &__top-right-tel::before {
-      content:"";
+      content: "";
       background-image: url(../images/tel.png);
       width: 28px;
       height: 28px;
       cursor: pointer;
       background-repeat: no-repeat;
-      position: absolute;
-      right: 320px;
-      top: 0;
+      background-position: 0 0;
       margin-right: 23px;
       display: block;
 
-      
+
     }
 
-    &__top-right-fbimg{
-      margin-left: 58px;
-    }
+     &__socials-link {
+       text-decoration: none;
+     }
 
-    &__top-right-img{
+    &__top-right-img {
       margin-left: 26px;
     }
 
-    &__top-select{
+    &__top-select {
       margin-left: 66px;
     }
 
-    &__top-select{
+    &__top-select {
       width: 100px;
       appearance: none;
       border: none;
-      background-image: url(../images/rf.png),url(../images/arrow-down.png);
+      background-image: url(../images/rf.png), url(../images/arrow-down.png);
       background-size: 41px 41px,
-      11px 7px;
+        11px 7px;
       cursor: pointer;
       background-repeat: no-repeat;
-      background-position: 0 -16px,55px 2px;
+      background-position: 0 -16px, 55px 2px;
     }
 
-    .line{
+    .line {
       width: 100%;
       height: 1px;
       background-color: rgba(85, 166, 48, 0.5);
     }
 
-      &__bottom--container {
-        padding-top: 22px;
-        padding-bottom: 22px;
+    &__bottom-container {
+      padding-top: 22px;
+      padding-bottom: 22px;
+     
 
-      .navbar{
+      .navbar {
         @include box;
         flex-wrap: wrap;
-        gap:10px;
+        gap: 10px;
 
-        
 
-      &__link{
-        @include link;
-        font: {
-          style: normal;
-          weight: 500;
-          size: 16px;
+
+        &__link {
+          @include link;
+
+          font: {
+            style: normal;
+            weight: 500;
+            size: 16px;
+          }
+
+          line-height: 26px;
+          color: $main-black;
+
+          &:hover {
+            color: $main-green;
+          }
+
         }
 
-        line-height: 26px;
-        color: $main-black;
-
-        &:hover {
-          color: $main-green;
       }
-        
-    }
-      
-  } 
 
-}
+    }
+  
+
 
     &__close--button {
       width: 30px;
@@ -128,13 +128,18 @@
       }
       
     }
+    &__mobile{
+        display: none;
+      }
+
+      &__close--button{
+        display: none;
+      }
+
+    
 
 
-
-      &__mobile{
-          display: none;
-        }
-  }
+  } //header
 
    .curtain {
      display: none;
@@ -144,8 +149,9 @@
      top: 0;
      bottom: 0;
      z-index: 100;
-     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),
-         rgba(0, 0, 0, 0.5));
+     background-image: linear-gradient(to bottom, 
+     rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5));
    }
   
 // responsive 1000,768,480,320.
@@ -161,12 +167,11 @@
         display: block;
       }
 
-      &__mobile--container{
+      &__mobile-container{
         position: relative;
         @include box;
         padding-top: 9px;
         padding-bottom: 11px;
-        padding-right: 55px;
       }
 
        &__mobile-logo {
@@ -174,44 +179,137 @@
          height: 74px;
        }
 
+        &__mobile-btn {
+          width: 186px;
+          text-align: left;
+          display: block;
+          border: none;
+          background-color: transparent;
+        }
 
-      &__mobile-btn{
-        width: 200px;
-        border:none;
-        text-align: left;
+        &__mobile-tel {
+          @include link;
+          font: {
+            style: normal;
+            weight: 500;
+            size: 20px;
+          }
+  
+          line-height: 26px;
+          color: $main-black;
+        }
+  
+        &__mobile-tel::before {
+          content: "";
+          background-image: url(../images/tel.png);
+          width: 50px;
+          height: 28px;
+          cursor: pointer;
+          background-repeat: no-repeat;
+          background-size:28px 28px;
+          background-position: 0 0px;
+          display: inline-block;
+  
+        }
+
+  
+
+    
+        // menu
+
+
+
+      &__desktop--on {
+        display: block;
+        position: absolute;
+        max-width: 370px;
+        min-height: 796px;
+        width: 100%;
+        padding: 26px;
+        z-index: 1000;
+        background-color: $main-white;
+        position: fixed;
+      }
+
+      &__top-container , &__bottom-container{
+        padding: 0;
+      }
+
+      &__top-right{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+      }
+
+      &__top-right-tel{
+        margin-bottom: 40px;
+        font-size: 22px;
+        line-height: 26px;
+
+        &::before{
+          width: 23px;
+          height: 23px;
+          background-size: cover;
+        }
+      }
+      &__socials{
+        position: absolute;
+        bottom: 119px;
+        margin-right: 0;
+      }
+
+      
+     
+       &__top-select{
+         margin-left: 0;
+       }
+
+
+
+      &__top-logo{
+        display: none;
+      }
+
+      &__close--button {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 26px;
+        border: none;
+        cursor: pointer;
         background-color: $main-white;
       }
 
-      &__mobile-tel {
-        @include link;
-        padding-left: 50px;
+      .navbar{
+        flex-direction: column;
+        align-items:flex-start;
+        gap:30px;
 
-        font: {
-          style: normal;
-          weight: 500;
-          size: 20px;
+        &__link{
+          font-size: 20px;
+          line-height: 15px;
         }
-
-        line-height: 26px;
-        color: $main-black;
+      }
+      
+      .line{
+        display: none;
       }
 
-      &__mobile-tel::before {
-        content: "";
-        background-image: url(../images/tel.png);
-        width: 28px;
-        height: 28px;
-        cursor: pointer;
-        background-repeat: no-repeat;
-        position: absolute;
-        right: 219px;
-        top: 32px;
+      } //header
+    
+      .curtain--on{
         display: block;
-
+        position: fixed;
       }
-    }
-  }
 
+    }
+
+  
+
+
+
+
+  
 
 // responsive tablet (768)
 
@@ -237,8 +335,7 @@
       }
 
        &__mobile-btn {
-         width: 65px;
-         margin-left: 20px;
+        width: 148px
        }
 
       &__mobile-tel {
@@ -279,7 +376,7 @@
          display: block;
        }
 
-       &__mobile--container {
+       &__mobile-container {
          position: relative;
          @include box;
          padding-top: 10px;
@@ -326,8 +423,8 @@
          background-repeat: no-repeat;
          background-size: contain;
          position: absolute;
-         right: 107px;
-         top: 27px;
+         right: 114px;
+         top: 26px;
          display: block;
 
       }

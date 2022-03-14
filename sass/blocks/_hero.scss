@@ -1,7 +1,11 @@
 .hero{
+    // &__container{
+    //   padding: 0;
+    // }
 
     &__top-box{
       @include box;
+       margin-top: 37px;
     }
 
     &__top-box-heading{
@@ -63,9 +67,10 @@
       // responsive(1000)
 @media only screen and (max-width:1000px) {
   .hero {
-    padding-right: 25px;
+    // padding-right: 0px;
     &__top-box {
       @include box;
+      margin: 0;
       
    
     }
@@ -133,8 +138,8 @@
      
     &__top-box {
       @include box;
-      padding-right: 5px;
-      padding-left: 45px;
+      padding-right: 34px;
+      padding-left: 39px;
     }
 
     &__top-box-heading {
@@ -162,14 +167,14 @@
         left: 105px;
         bottom: 100px;
       }
-    
-
+      
       padding: {
         top: 32px;
         right: 31px;
         left: 26px;
         bottom: 32px;
       }
+    
 
       box-shadow: 11px 18px 41px -20px 
       rgba(34, 60, 80, 0.2);
@@ -191,6 +196,8 @@
       opacity: 0.8;
 
     }
+
+  
 
   }
 
