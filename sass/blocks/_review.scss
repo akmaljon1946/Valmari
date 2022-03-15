@@ -1,0 +1,355 @@
+.review{
+  &__heading{
+    font: {
+      weight: 600;
+      size: 35px;
+    }
+
+    line-height: 28px;
+    margin-top: 177px;
+    margin-bottom: 75px;
+    text-align: center;
+    color: $main-black;
+  }
+
+  &__wrapper{
+    position: relative;
+    max-width: 1200px;
+    max-height: 1048px;
+    padding: {
+      left: 104px;
+      bottom: 178px;
+    }
+    
+    margin-bottom: 175px;
+    background: #ECF9EB;
+  }
+
+    &__list{
+      max-height: 800px;
+      padding: 0;
+      margin: 0;
+      margin-top: 30px;
+      list-style-type: none;
+      @include box;
+      flex-direction: column;
+      overflow-x: hidden;
+      
+    }
+       
+
+      
+
+    &__item{
+      @include box;
+      margin-bottom:80px;
+    }
+
+    &__box{
+      margin-right: 111px;
+      padding-bottom: 80px;
+    }
+
+    &__title{
+      margin: 0;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      
+      color: #424242;
+    }
+
+    &__data{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 8px;
+      color: $main-black;
+      opacity: 0.8;
+    }
+
+    &__text{
+      margin: 0;
+      width: 746px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+
+      color: #1C1E23;
+      opacity: 0.8;
+    }
+
+    &__btn{
+      position: absolute;
+      right: 450px;
+      bottom:52px;
+      width: 285px;
+      height: 66px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+      border: none;
+      color:$main-white;
+      background-color: $main-green;
+      text-align: center;
+    }
+
+    &__btn:hover{
+      background-color:$main-white;
+      color: $main-green;
+      transition: all 350ms ease;
+    }
+
+  }
+     
+
+// responsive
+
+@media only screen and (max-width:1000px) {
+  .review{
+     &__heading{
+        margin-top: 140px;
+        margin-bottom: 50px;
+        font-size: 25px;
+        line-height: 17px;
+     }
+
+     &__wrapper {
+       max-width: 962px;
+       max-height: 1048px;
+       margin-bottom: 140px;
+       padding: {
+         left: 82px;
+         bottom: 256px;
+       }
+
+     }
+
+      &__box {
+        width: 196px;
+        margin-right: 48px;
+        padding-bottom: 20px;
+      }
+
+      &__text{
+        width: 598px;
+      }
+
+      &__list{
+        max-height: 900px;
+        padding-right: 30px;
+      }
+
+       &__btn {
+         position: absolute;
+         right: 345px;
+         bottom: 55px;
+         width: 247px;
+         height: 55px;
+         font-weight: 600;
+         font-size: 18px;
+         line-height: 14px;
+      }
+    } 
+  }
+      
+
+
+@media only screen and (max-width:768px) {
+  .review{
+    padding-left: 43px;
+    padding-right: 43px;
+     &__heading{
+        margin-top: 100px;
+        margin-bottom: 50px;
+     }
+
+     &__wrapper {
+       max-width: 642px;
+       max-height: 1048px;
+       margin-bottom: 100px;
+       padding: {
+         left: 60px;
+         bottom: 223px;
+       }
+
+     }
+
+      &__box {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items:flex-end;
+        margin-top: 6px;
+        margin: 0;
+        padding: 0;
+      }
+
+      &__title,&__data{
+        font-size: 15px;
+      }
+      
+      &__text{
+        width: 550px;
+        font-size: 15px;
+        line-height: 23px;
+        margin-top: 63px;
+      }
+      
+      &__list{
+        max-height: 900px;
+        padding-right: 32px;
+      }
+      
+      &__item{
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 0;
+      }
+
+       &__btn {
+         right: 187px;
+         width: 255px;
+         height: 50px;
+         font-size: 18px;
+         line-height: 16px;
+      }
+    } 
+  }
+
+
+
+@media only screen and (max-width:480px) {
+  .review{
+    padding-left: 40px;
+    padding-right: 40px;
+     &__heading{
+        margin-top: 80px;
+        margin-bottom: 40px;
+     }
+
+     &__wrapper {
+       max-width: 360px;
+       max-height: 1048px;
+       margin-bottom: 80px;
+       padding: {
+         left: 17px;
+         bottom: 158px;
+       }
+
+     }
+
+      &__box {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items:flex-end;
+        margin-top: 6px;
+        margin: 0;
+        padding: 0;
+      }
+
+      &__title,&__data{
+        font-size: 15px;
+      }
+      
+      &__text{
+        width: 320px;
+        font-size: 15px;
+        line-height: 23px;
+        margin-top: 50px;
+      }
+      
+      &__list{
+        max-height: 900px;
+        padding-right: 17px;
+      }
+      
+      &__item{
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 0;
+      }
+
+       &__btn {
+         right: 55px;
+         bottom: 45px;
+         width: 255px;
+         height: 50px;
+         font-size: 18px;
+         line-height: 14px;
+      }
+    } 
+  }
+
+
+@media only screen and (max-width:320px) {
+  .review{
+    padding-left: 0px;
+    padding-right: 0px;
+     &__heading{
+      font-size: 20px;
+      line-height: 28px;
+      margin-top: 80px;
+      margin-bottom: 40px;
+     }
+
+     .container{
+       padding-left: 10px;
+       padding-right: 10px;
+     }
+
+     &__wrapper {
+       max-width: 300px;
+       max-height: 791px;
+       margin-bottom: 80px;
+       padding: {
+         left: 26px;
+         bottom: 156px;
+       }
+
+     }
+
+      &__box {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items:flex-end;
+        margin-top: 4px;
+        margin: 0;
+        padding: 0;
+      }
+
+      &__title,&__data{
+        font-size: 15px;
+      }
+      
+      &__text{
+        width: 254px;
+        font-size: 15px;
+        line-height: 23px;
+        margin-top: 56px;
+      }
+      
+      &__list{
+        max-height: 600px;
+        padding-right: 8px;
+      }
+      
+  
+
+       &__btn {
+         right: 36px;
+         bottom: 49px;
+         width: 230px;
+         height: 45px;
+         font-size: 18px;
+         line-height: 16px;
+      }
+    } 
+  } 
+// end of 320
+
+
+
+
+
+
+
