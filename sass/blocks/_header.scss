@@ -14,9 +14,7 @@
     &__top-right-tel {
       display: flex;
       align-items: center;
-
       @include link;
-
       font: {
         style: normal;
         weight: 500;
@@ -25,7 +23,13 @@
 
       line-height: 26px;
       color: $main-black;
+
+       &:hover {
+         color: #0000EE;
+       }
+
     }
+
 
     &__top-right-tel::before {
       content: "";

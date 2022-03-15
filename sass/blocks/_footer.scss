@@ -1,0 +1,100 @@
+.footer{
+  display: flex;
+  justify-content: center;
+  min-height: 776px;
+
+  &__map{
+    flex-grow: 1;
+    max-width: 756px;
+  }
+
+  &__right{
+    max-width: 684px;
+    width: 100%;
+    padding: 40px 70px;
+    display: flex;
+    flex-direction: column;
+    background-color: $main-black;
+    color: $main-white;
+  }
+
+  &__adress{
+    margin-top: 50px;
+  }
+
+  &__tel{
+    @include link;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    color: $main-white;
+
+    &:hover{
+      color:#0000EE;
+    }
+  }
+
+  &__text{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 28px;
+    margin-top: 25px;
+  }
+
+  &__lists{
+    display: flex;
+    margin-top: 84px;
+    gap:95px;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+
+  }
+
+  &__list-link{
+    @include link;
+    color: $main-white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    opacity: 0.8;
+
+
+    &:hover{
+      color: $main-green;
+    }
+  }
+
+  &__socials{
+    margin-top: 85px;
+    margin-bottom: 48px;
+  }
+
+  &__socials-link{
+    margin-right: 39px;
+
+  }
+
+  &__socials-icon{
+     &:hover path {
+       fill: $main-green;
+     }
+  }
+
+  &__head{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    
+    opacity: 0.8;
+  }
+   
+}
+
+// responsive
+
+
+  
